@@ -6,4 +6,4 @@ find ./ -mmin +5 -type f -name '*-ST*.mp4' -not -path "./Downloads/*" | xargs -I
 
 find ./ -mmin +5 -type f -name '*-SW*.mp4' -not -path "./Downloads/*" | xargs -I{} sh -c 'mv -v "$0" "${0/.1080p-SW/}"' {}
 find ./ -mmin +5 -type f -name '*-SW*.mp4' -not -path "./Downloads/*" | xargs -I{} sh -c 'mv -v "$0" "${0/-SW/}"' {}
- 
+1 
